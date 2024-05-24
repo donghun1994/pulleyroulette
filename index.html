@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>행운의 돌림판</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="title">
+      <h1>풀리수학 글로컬 박람회 <br />경품 추첨</h1>
+    </div>
+    <div class="rotate">
+      <canvas width="500" height="500"></canvas>
+      <button onclick="rotate()">룰렛 돌리기</button>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modal-message"></p>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
