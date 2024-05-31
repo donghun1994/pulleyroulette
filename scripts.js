@@ -7,12 +7,12 @@ const product = [
   "GS25", // 5%
   "이삭토스트", // 6%
   "빽다방", // 5%
-  "꽝", // 31%
+  "사탕", // 31%
   "네이버페이", // 3%
   "GS25", // 5%
   "이삭토스트", //6%
   "빽다방", // 5%
-  "꽝", // 31%
+  "초콜릿", // 31%
 ];
 
 const colors = [
@@ -130,11 +130,7 @@ const rotate = () => {
     $c.style.transition = "3s ease-out"; // 감속 효과 추가
 
     setTimeout(() => {
-      if (product[winnerIndex] == "꽝") {
-        showModal("아쉽지만 꽝이에요 ㅠㅠ");
-      } else {
-        showModal(`당첨된 아이템: ${product[winnerIndex]}`);
-      }
+      showModal(`당첨된 아이템: ${product[winnerIndex]}`);
 
       button.disabled = false; // 회전이 끝나면 버튼 활성화
       newMake(); // 새로 그리기 및 강조 표시
